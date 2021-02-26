@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   Version="9.0" 
+   ExtensionBundleId="com.magnitude.agility.sso" 
+   ExtensionBundleVersion="1.0.0" 
+   ExtensionBundleName="AgilitySSO">
+   <ExtensionList>
+      <Extension Id="com.magnitude.agility.sso" Version="1.0" />
+   </ExtensionList>
+   <ExecutionEnvironment>
+      <HostList>
+         <Host Name="IDSN" Version="15" />
+         <Host Name="ILST" Version="23" />
+      </HostList>
+      <LocaleList>
+         <Locale Code="All" />
+      </LocaleList>
+      <RequiredRuntimeList>
+         <RequiredRuntime Name="CSXS" Version="9.0" />
+      </RequiredRuntimeList>
+   </ExecutionEnvironment>
+   <DispatchInfoList>
+      <Extension Id="com.magnitude.agility.sso">
+         <DispatchInfo>
+            <Resources>
+                <MainPath>./index.html</MainPath>
+            </Resources>
+            <Lifecycle>
+               <AutoVisible>true</AutoVisible>
+            </Lifecycle>
+            <UI>
+               <Type>ModalDialog</Type>
+               <Menu>AgilitySSO</Menu>
+               <Geometry>
+                      <Size>
+                        <Height>442</Height>
+                        <Width>290</Width>
+                     </Size>
+                     <MaxSize>
+                        <Height>442</Height>
+                        <Width>290</Width>
+                     </MaxSize>
+                     <MinSize>
+                        <Height>442</Height>
+                        <Width>290</Width>
+                     </MinSize>
+               </Geometry>
+            </UI>
+         </DispatchInfo>
+      </Extension>
+   </DispatchInfoList>
+</ExtensionManifest>

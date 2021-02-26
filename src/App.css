@@ -1,0 +1,128 @@
+.content{
+    display: block;
+    width: 240px;
+    background-color: #f1f1f1;
+    padding: 25px;
+    overflow: auto;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.logoDiv{
+    width: 38%;
+    float: left;
+    height: 90px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logoHeader{
+    width: 59%;
+    float: right;
+    height: 90px;
+}
+
+.logoHeaderTitle1{
+    font-family: sans-serif;
+    font-size: 29px;
+    margin: 0px;
+    padding-left: 10px;
+    letter-spacing: 2.5px;
+}
+
+.logoHeaderTitle2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 0px;
+    letter-spacing: 1.5px;
+}
+
+.logoHeaderTitle3{
+    margin: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.hostDropdownLabel{
+    margin-top: 45px;
+    width: 17%;
+}
+
+.hostDropdown{
+    width: 83%;
+    height: 25px;
+    margin-top: 45px;
+}
+
+.horizantalRule{
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+
+.button{
+    background-color: orange;
+    box-shadow: 1.5px 1.5px 0px 0 black;
+    height: 25px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.orLabel{
+    text-align: center;
+    width: 100%;
+}
+
+.buttonsLeftDiv{
+    width: 49%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 1%;
+}
+
+.buttonsRightDiv{
+    width: 49%;
+    float: right;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+.textboxfield{
+    border: 1px solid;
+    background-color: white;
+    height: 25px;
+    margin-top: 5px;
+}
+
+input[type="text"]{
+    border: none;
+    width: calc(90% - 11px);
+    height: 22px;
+    margin-left: 3px;
+}
+
+input[type="text"]:focus {
+    outline: none
+  }
+
+.textboxIcon{
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    width: 5%;
+    border-right: 1px solid black;
+}
