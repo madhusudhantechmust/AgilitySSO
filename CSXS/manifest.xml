@@ -27,6 +27,12 @@
             </Resources>
             <Lifecycle>
                <AutoVisible>true</AutoVisible>
+               <Lifecycle>
+                    <AutoVisible>false</AutoVisible>
+                    <StartOn>
+                        <Event>com.magnitude.agility.sso.login</Event>
+                    </StartOn>
+                </Lifecycle>
             </Lifecycle>
             <UI>
                <Type>ModalDialog</Type>

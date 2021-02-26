@@ -21,7 +21,7 @@ class App extends React.Component
             {this.buildUsernameField()}
             {this.buildPasswordField()}
             <div className="buttonsLeftDiv">
-                <button className="button">Cancel</button> 
+                <button className="button" onClick={this.closeExtension.bind(this)}>Cancel</button> 
             </div>
             <div className="buttonsRightDiv">
                 <button className="button">Login</button>
@@ -43,6 +43,12 @@ class App extends React.Component
             <FiKey className="textboxIcon"/>
             <input classname="textbox" type="text"/>
         </div>
+    }
+
+    closeExtension()
+    {
+        var oCSInterface = new CSInterface();
+        oCSInterface.closeExtension();
     }
     
 }
