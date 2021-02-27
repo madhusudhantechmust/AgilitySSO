@@ -109,9 +109,10 @@
 
 input[type="text"]{
     border: none;
-    width: calc(90% - 11px);
-    height: 22px;
+    width: calc(90% - 7px);
+    height: 18px;
     margin-left: 3px;
+    padding: 2px;
 }
 
 input[type="text"]:focus {
