@@ -2,7 +2,7 @@ var en_EN = (function()
 {
     var arrEnglishConstants =
     { 
-        STR_LOGIN_WITH_IDENTITY_PROVIDER : "Log in with 'Identity provider Name'",
+        STR_LOGIN_WITH_IDENTITY_PROVIDER : "Log in with ",
         STR_OR : "OR",
         STR_CANCEL : "Cancel",
         STR_LOGIN : "Login",

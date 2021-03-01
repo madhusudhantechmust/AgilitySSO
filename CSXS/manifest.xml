@@ -24,6 +24,7 @@
          <DispatchInfo>
             <Resources>
                 <MainPath>./index.html</MainPath>
+                <ScriptPath>./src/jsx/App.jsx</ScriptPath>
             </Resources>
             <Lifecycle>
                <AutoVisible>true</AutoVisible>
@@ -35,7 +36,7 @@
                 </Lifecycle>
             </Lifecycle>
             <UI>
-               <Type>ModalDialog</Type>
+               <Type>Modeless</Type>
                <Menu>AgilitySSO</Menu>
                <Geometry>
                       <Size>
