@@ -20,6 +20,11 @@ function getIDPList(strHostName)
     return strIDPList;
 }
 
+function handleLogin(strUserName, strPassword, strHost)
+{
+    return app.handleLogin(strUserName, strPassword, strHost);
+}
+
 function handleSAMLlogin(strResponse)
 {
     return app.handleSAMLLogin(strResponse);
