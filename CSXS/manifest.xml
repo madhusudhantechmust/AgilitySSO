@@ -36,19 +36,19 @@
                 </Lifecycle>
             </Lifecycle>
             <UI>
-               <Type>Modeless</Type>
+               <Type>ModalDialog</Type>
                <Menu>AgilitySSO</Menu>
                <Geometry>
                       <Size>
-                        <Height>442</Height>
+                        <Height>107</Height>
                         <Width>290</Width>
                      </Size>
                      <MaxSize>
-                        <Height>442</Height>
+                        <Height>500</Height>
                         <Width>290</Width>
                      </MaxSize>
                      <MinSize>
-                        <Height>442</Height>
+                        <Height>107</Height>
                         <Width>290</Width>
                      </MinSize>
                </Geometry>

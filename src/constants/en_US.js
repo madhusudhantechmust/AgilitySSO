@@ -9,6 +9,7 @@ var en_EN = (function()
         STR_AGILITY : "AGILITY",
         STR_MULTICHANNEL : "MultiChannel",
         STR_BY_MAGNITUDE : "BY MAGNITUDE",
+        STR_SEND_EVENT_TO_PLUGIN : "Send event to plugin"
     }
     return{
         arrEnglishConstants : arrEnglishConstants,
