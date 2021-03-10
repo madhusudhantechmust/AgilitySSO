@@ -11,18 +11,28 @@ class App extends React.Component
         console.log("App :: componentDidMount()");
         var oCSInterface = new CSInterface();
         oCSInterface.addEventListener(EventConstants.STR_LOAD_URL, this.handleLoadUrl.bind(this));
-    }
 
-    componentDidUpdate()
-    {
-        var oCSInterface = new CSInterface();
-        oCSInterface.resizeContent(290, 107);
+        var oParams = new URLSearchParams(window.location.search);
+        var strToken = oParams.get("token");
+        var strIDPUrl = oParams.get("idp");
+        if(strToken !== null && strToken !== "")
+        {
+            ExtensionController.sendEventToPlugin("com.magnitude.agility.token", strToken);
+            oCSInterface.closeExtension();
+        }
+        else
+        {
+            var oCSEvent = new CSEvent(EventConstants.STR_LOAD_URL, "APPLICATION", "IDSN", "com.magnitude.agility.sso");
+            oCSEvent.data = "https://magnitudesoftware.okta.com";
+            oCSInterface.dispatchEvent(oCSEvent);
+        }
     }
 
     handleLoadUrl(oEvent)
     {
         var oCSInterface = new CSInterface();
-        oCSInterface.setWindowTitle(oEvent.data)
+        oCSInterface.resizeContent((screen.width * 3/4), (screen.height * 3/4));
+        window.location = "https://agilitysso.s3-ap-southeast-1.amazonaws.com/index.html?idp=" + oEvent.data + "&ext=" + window.location.href;
     }
 
     sendEventToPlugin()
@@ -35,9 +45,8 @@ class App extends React.Component
 
     render()
     {
-        return <div className="content">
-            {this.buildTextBox()}
-            {this.buildSendEventToPluginButton()}
+        return <div className="centerDiv">
+            <progress/>
         </div>
     }
 
